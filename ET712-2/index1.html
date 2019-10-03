@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <title>Arrays in JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+
+    <style>
+        body {
+
+            background-image: url(img/car3.jpg);
+            background-size: cover;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            justify-content: center;
+            display: inline;
+            align-items: center;
+            text-align: center;
+            animation: back linear 10s infinite;
+            animation-delay: 5s;
+
+        }
+
+        @keyframes back {
+            0% {
+                background-image: url(img/car1.jpg);
+                background-size: cover;
+                background-repeat: repeat-x;
+                background-attachment: fixed;
+                justify-content: center;
+            }
+
+            30% {
+                background-image: url(img/car1.jpg);
+                background-size: cover;
+                background-repeat: repeat-x;
+                background-attachment: fixed;
+                justify-content: center;
+            }
+
+            40% {
+                background-image: url(img/car2.jpg);
+                background-size: cover;
+                background-repeat: repeat-x;
+                background-attachment: fixed;
+                justify-content: center;
+            }
+
+            50% {
+                background-image: url(img/car3.jpg);
+                background-size: cover;
+                background-repeat: repeat-x;
+                background-attachment: fixed;
+                justify-content: center;
+            }
+
+
+            100% {
+                background-image: url(img/car4.jpg);
+                background-size: cover;
+                background-repeat: repeat-x;
+                background-attachment: fixed;
+                justify-content: center;
+            }
+        }
+
+        .mid {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 30%;
+            right: 0;
+            border-radius: 10px;
+        }
+
+        #text {
+            font-size: 25px;
+            color: firebrick;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50px;
+            right: 250px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            background-color: darkslategrey;
+            color: antiquewhite;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px black, 0px 0px 30px 0px, 0px 0px 40px 0px black;
+        }
+
+        p {
+
+            background-color: white;
+            color: black;
+            text-align: left;
+            padding: 30px;
+            padding-left: 70px;
+            border-radius: 100px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: ;
+            margin: 50px;
+            box-shadow: 0px 0px 20px 0px black, 0px 0px 30px 0px, 0px 0px 40px 0px black, 0px 0px 50px 0px, 0px 0px 60px 0px white;
+            transition: 1s;
+        }
+
+        p:hover {
+            box-shadow: 0px 0px 20px 0px white, 0px 0px 30px 0px white, 0px 0px 40px 0px white, 0px 0px 50px 0px white, 0px 0px 60px 0px white;
+            position: relative;
+            transition: 1s;
+            background-color: black;
+            color: white;
+
+        }
+
+        #text1 {
+            background-color: aquamarine;
+            background-image: url(img/Dale%20Jarrett.jpg);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: 23px;
+            border: 2px solid white;
+            transition: 2s;
+        }
+
+        #text2 {
+            background-color: aquamarine;
+            background-image: url(img/Michael%20Waltrip.jpeg);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: -23px;
+            border: 2px solid white;
+            transition: 2s;
+        }
+
+        #text3 {
+            background-color: aquamarine;
+            background-image: url(img/Ward%20Burton.jpg);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: -23px;
+            border: 2px solid white;
+            transition: 2s;
+        }
+
+        #text4 {
+            background-color: aquamarine;
+            background-image: url(img/Michael%20Waltrip.jpeg);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: -23px;
+            border: 2px solid white;
+            transition: 2s;
+        }
+
+        #text5 {
+            background-color: aquamarine;
+            background-image: url(img/Dale%20Earnhardt%20Jr..png);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: -23px;
+            border: 2px solid white;
+            transition: 2s;
+        }
+
+        #text1:hover,
+        #text2:hover,
+        #text3:hover,
+        #text4:hover,
+        #text5:hover {
+
+            height: 300px;
+            width: 300px;
+            z-index: 10;
+            transition: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <h1>Daytona Race Champions 2000-2004</h1>
+    <div class="mid">
+
+
+
+        <script type="text/javascript">
+            var driver = new Array(5);
+
+            driver[0] = "Dale Jarrett";
+            driver[1] = "Michael Waltrip";
+            driver[2] = "Ward Burton";
+            driver[3] = "Michael Waltrip";
+            driver[4] = "Dale Earnhardt Jr.";
+
+            var car = new Array(5);
+
+            car[0] = "Ford";
+            car[1] = "Chevrolet";
+            car[2] = "Dodge";
+            car[3] = "Chevrolet";
+            car[4] = "Chevrolet";
+
+            var speed = new Array(5);
+
+            speed[0] = 155.669;
+            speed[1] = 161.783;
+            speed[2] = 130.81;
+            speed[3] = 133.87;
+            speed[4] = 156.341;
+
+
+            document.write("<div id='text1'></div><p><b>2000</b> : The champion is <span id='text'>" + driver[0] + "</span> driving a " + car[0] + ", with a speed of " + speed[0] + " miles per hour. </p>");
+
+            document.write("<div id='text2'></div><p><b>2001</b> : The champion is <span id='text'>" + driver[1] + "</span> driving a " + car[1] + ", with a speed of " + speed[1] + " miles per hour. </p>");
+
+            document.write("<div id='text3'></div><p><b>2002</b> : The champion is <span id='text'>" + driver[2] + "</span> driving a " + car[2] + ", with a speed of " + speed[2] + " miles per hour. </p>");
+
+            document.write("<div id='text4'></div><p><b>2003</b> : The champion is <span id='text'>" + driver[3] + "</span> driving a " + car[3] + ", with a speed of " + speed[3] + " miles per hour. </p>");
+
+            document.write("<div id='text5'></div><p><b>2004</b> : The champion is <span id='text'>" + driver[4] + "</span> driving a " + car[4] + ", with a speed of " + speed[4] + " miles per hour. </p>");
+        </script>
+    </div>
+</body></html>

@@ -1,0 +1,18 @@
+Summary:
+
+So there we have it, the basics of figuring out errors in simple JavaScript programs. It won't always be that simple to work out what's wrong in your code, but at least this will save you a few hours of sleep and allow you to progress a bit faster when things don't turn out right, especially in the earlier stages of your learning journey.
+
+
+1. Explain one technique that you can use to troubleshoot a bugged program?
+  
+   Ans: Browser Developer Tools have been found quite helpful in debugging JavaScript. For starters, the JavaScript console will report errors in your code. A distinguishing feature of such tools is the ability to add breakpoints to code. At breakpoints, you can conveniently judge the environment in its current state and see what is going on and what course of further actions is needed.
+
+
+2. What is the most common error in JavaScript?
+   Ans: Most common errors are SyntaxError: missing; before a statement, the program always says you've won, regardless of the guess you enter, SyntaxError: missing ) after argument list and SyntaxError: expected expression, got 'string' or SyntaxError: unterminated string literal
+
+
+
+3. What are comments used for?
+
+   Ans: Single line comments start with // and Multi-line comments start with /* and end with */.

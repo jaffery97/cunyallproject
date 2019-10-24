@@ -1,0 +1,54 @@
+body {
+    background-color: gainsboro;
+    margin: 20px;
+    height: auto;
+    width: auto;
+    font-family: Arial Narrow;
+}
+
+nav {
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    right: 45%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+li {
+    float: left;
+    list-style: none;
+    background-color: #333333;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+
+.heee {
+    margin: 150px;
+}

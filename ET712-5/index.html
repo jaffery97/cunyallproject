@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>This program will change metric to standard</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            font-family: Arial Narrow;
+            display: flex;
+            justify-content:center;
+            background-image: url(calculator-1156121_1920.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        
+        .box {
+            
+            color: aliceblue;
+            width: 50%;
+            height: 50vh;
+            position: relative;
+            top: 20%;
+            padding: 33px;
+            background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC);
+           
+/*
+            background-color: rgba(0,0,0,0.2);
+            padding: 20px; */
+            box-shadow: 0px 0px 20px 0px black,
+            0px 0px 4px 0px white,0px 0px 5px 0px black,0px 0px 5px 0px,0px 0px 10px 0px;
+            border-radius: 10% 0px 53px 0px;
+           
+                
+
+        }
+        
+        input {
+            width:70%;
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px black,
+            0px 0px 4px 0px white,0px 0px 5px 0px black,0px 0px 5px 0px,0px 0px 10px 0px;
+            font-size: 15px;
+            
+        }
+
+        .convert {
+            width: auto;
+            border: 2px solid green;
+            font-weight: bold;
+            text-transform: uppercase;
+            float: left;
+            z-index: 1;
+        }
+        
+        .convert:hover {
+            background-color: darkgreen;
+            color: aliceblue;
+            transition: 1s;
+        }
+        
+         footer {
+            position: absolute;
+            bottom: 15px;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 5px 30px 5px 30px;
+            border-radius: 20px;
+        }
+        
+        
+/*        background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
+    </style>
+</head>
+
+<body>
+ 
+    <div class="box">
+        <h1 style="text-align: left;color: aliceblue"> This program will change metric to standard</h1><br>
+    <input type="text" id="centi" name="centi" accesskey="e"> Centi <br>
+    <input type="text" id="feet" name="feet" > Feet <br>
+    <input type="text" id="inch" name="inch" > Inch <br><br>
+        
+
+    <input type="button" value="convert" name="submit" onclick="myFunction()" class="convert" accesskey="e">
+        
+        
+    <p style="text-align: right; background-color: black; color: white;padding: 5px;border-radius: 10px;font-family: Arial Narrow">Quick info: 1 Inch = 2.54 cm, 1 Feet = 30.84 cm, 1 
+        Feet = 12 Inch &nbsp;</p>
+
+</div>
+
+    
+    <footer>
+    COPYRIGHT @ MH JAFORY 19
+    </footer>
+
+
+    <script type="text/ecmascript">
+        function myFunction() {
+            var x = document.getElementById("centi").value;
+            if (x == "") {
+                alert("You mas enter a numer please");
+                document.getElementById("centi").value = "";
+                document.getElementById("centi").focus();
+                return false;
+            }
+
+            x = parseInt(x);
+            var feet = (x / 34.84);
+            var inch = (x / 2.54);
+
+
+            //              result output with value
+
+            document.getElementById('feet').value = feet.toFixed(4);
+            document.getElementById('inch').value = inch.toFixed(4);
+
+        }
+    </script>
+
+
+</body>
+
+</html>

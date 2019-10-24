@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" media="screen">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="vid/Footage%20-%2012127.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+
+
+
+    <img src="img/logo.png" class="logo">
+
+
+
+    <nav>
+        <button class="navi">Home</button>
+        <button class="navi">About Us</button>
+        <button class="navi">Contact Us</button>
+
+
+    </nav>
+
+
+
+
+
+    <div class="content">
+
+
+
+        <button class="tablink" onclick="openCity('signin', this, 'firebrick')" id="defaultOpen">Sign In</button>
+        <button class="tablink" onclick="openCity('signup', this, 'firebrick')">Sign Up</button>
+
+
+        <div id="signin" class="tabcontent">
+            <form action="/action_page.php" class="container">
+                <h1>Login</h1>
+                <hr><br>
+                <label for="email"><b> Email</b></label>
+                <input type="text" placeholder=" Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <div id="signup" class="tabcontent">
+            <form action="/action_page.php" class="container">
+                <h1>Sign Up </h1>
+                <hr><br>
+                <label for="email"><b> Email</b></label>
+                <input type="text" placeholder="Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Re-enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+
+
+
+    <footer>
+        Copyright @ Edchat
+    </footer>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <!--    tab-->
+    <script>
+        function openCity(cityName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body></html>

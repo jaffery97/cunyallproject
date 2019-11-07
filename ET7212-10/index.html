@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Number Check</title>
+    <style>
+        body {
+            color: white;
+
+            background-color: gray;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background: #16222A;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #3A6073, #16222A);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #3A6073, #16222A);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            height: 100vh;
+        }
+
+        input {
+            padding: 13px;
+
+            background-color: white;
+            color: firebrick;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            border: 2px solid black;
+        }
+
+        .ino {
+            width: 222px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 53px;
+            text-align: center;
+            width: 100%;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 200px;"></div>
+    <h1>This program will check to see if a number is entered.</h1><br><br>
+    
+    <form name="checknum" onSubmit="return checkban()" action="">
+        <h4>Please enter your age:</h4>
+        <input type="text" name="pnum" class="ino">
+        <input type="submit" value="Submit" >
+    </form>
+
+    <script language="JavaScript1.2">
+        function checknumber() {
+            var x = document.checknum.pnum.value
+            var anum = /(^\d+$)|(^\d+\.\d+$)/
+            if (anum.test(x))
+                testresult = true
+            else {
+                alert("Please input a valid number!")
+                testresult = false
+            }
+            return (testresult)
+        }
+    </script>
+
+    <script>
+        function checkban() {
+            if (document.layers || document.all || document.getElementById)
+                return checknumber()
+            else
+                return true
+        }
+    </script>
+    <footer>
+        Copyright @MH Jafory
+    </footer>
+
+</body></html>

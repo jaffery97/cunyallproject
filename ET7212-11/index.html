@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Current Time</title>
+    <style>
+        body {
+            background: #0f0c29;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            height: 94vh;
+            margin: 22px;
+            border: solid 3px white;
+            animation: color linear 8s infinite;
+
+        }
+
+        @keyframes color {
+
+            0% {
+                border: solid 3px #ccb7b7
+            }
+
+            10% {
+                border: solid 3px #b59393
+            }
+
+            20% {
+                border: solid 3px #9c7777
+            }
+
+            30% {
+                border: solid 3px #ab7a7a
+            }
+
+            40% {
+                border: solid 3px #806b6b
+            }
+
+            50% {
+                border: solid 3px #866a6a
+            }
+
+            60% {
+                border: solid 3px #805151
+            }
+
+            70% {
+                border: solid 3px #b94b4b
+            }
+
+            80% {
+                border: solid 3px #e47d7d
+            }
+
+            90% {
+                border: solid 3px #3c3939
+            }
+        }
+
+        #time {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 100px;
+            font-family: sans-serif;
+            font-size: 93px;
+            letter-spacing: 13px;
+            text-shadow: 5px 7px 7px black;
+            color: white;
+            transform-style: preserve-3d;
+
+
+        }
+
+        .time {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 140px;
+            text-transform: uppercase;
+            text-decoration-line: underline;
+            font-family: sans-serif;
+            font-size: 33px;
+            letter-spacing: 2px;
+            text-shadow: 5px 7px 7px black;
+            color: olivedrab;
+            transform-style: preserve-3d;
+
+        }
+
+        footer {
+            position: absolute;
+            bottom: 53px;
+            text-align: center;
+            width: 100%;
+            color: gray;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            #time {
+                font-size: 43px;
+            }
+
+            .time {
+                font-size: 23px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <h4 class="time">
+        Current Time
+    </h4>
+    <h4 id="time"></h4>
+
+
+
+
+    <script>
+        function getTimeofDay() {
+            var time_id = document.getElementById("time");
+            var d = new Date();
+            var hours = d.getHours();
+            var mins = d.getMinutes();
+            var secs = d.getSeconds();
+            var am_pm = "";
+
+            if (hours >= 12) {
+                am_pm = "PM";
+            } else {
+                am_pm = "AM";
+            }
+            if (hours > 13) {
+                hours = hours - 12;
+            }
+            if (secs < 10) {
+                secs = "0" + secs;
+            }
+            if (mins < 10) {
+                mins = "0" + mins;
+            }
+            time_id.innerHTML = hours + ":" + mins + ":" + secs + " " + am_pm;
+        }
+        setInterval(getTimeofDay, 100);
+    </script>
+
+
+    <footer>
+        Copyright @MH Jafory
+    </footer>
+
+</body></html>

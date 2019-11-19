@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="style2.css"?>
 
 <events>
 <event>
 <location>San Francisco, CA</location>
-<date>May 1</date>
-<map>img/map-ca.png</map>
+<date>San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay</date>
+    <map>img/img3.png</map>
+
 </event>
 <event>
 <location>Austin, TX</location>
-<date>May 15</date>
-<map>img/map-tx.png</map>
+<date>Austin is the state capital of Texas, an inland city bordering the Hill Country region</date>
+<map>img/img1.png</map>
 </event>
 <event>
 <location>New York, NY</location>
-<date>May 30</date>
-<map>img/map-ny.png</map>
+<date>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean</date>
+<map>img/img2.png</map>
 </event>
 </events>

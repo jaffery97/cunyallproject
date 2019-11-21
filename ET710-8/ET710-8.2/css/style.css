@@ -1,0 +1,97 @@
+
+
+
+.bg-img {
+  /* The image used */
+  
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  margin: 20px;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.79);
+    text-align: left;
+    border-radius: 0px 0px 13px 13px;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.8);
+}
+
+/* Full-width input fields */
+input[type=text],input[type=email], input[type=password], input[type=tel], input[type=number], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background-color: darkslategrey;
+font-size: 15px;
+    color: white;
+    
+}
+
+input[type=text]:focus,input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=number]:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+    color: black;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: firebrick;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  position: relative;
+    left: 25%;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  padding: 10px;
+  font-size: 17px;
+  width: 48%;
+  position: relative;
+  margin: 3px;
+    border-radius: 13px 13px 0px 0px;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.8);
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding-top: 60px;
+  text-align: center;
+
+    
+}
+
+#signin {background-color:transparent;}
+#signup {background-color:transparent;
+    
+    

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Gallery </title>
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans|Paytone+One|Righteous|Squada+One&display=swap" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/mediaquiery.css" rel="stylesheet">
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="bgrd">
+      <div class="header animated fadeInRight">
+   <img src="img/logo1.png" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About NYC</a>
+
+    </nav>
+    </div>
+
+
+
+        <div class="btext">
+            <h1 style="font-size: 42px;color: white;background-color: black;width: 200px;text-align: center;">
+                
+            Gallery
+            </h1>
+           
+        </div>
+
+    </div>
+
+
+   
+    <br>
+    <br>
+    <div style="text-align:center;text-shadow: 0px 20px 22px;">
+  <h2>New York City Photo Gallery</h2>
+<br>
+</div>
+    
+    <div class="gbox">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg">
+        <div id="imgtext"></div>
+    </div>
+    <br>
+    <div class="row animated fadeIn delay-1s">
+        <div class="gcolum">
+            <a href="#expandedImg">  <img src="img/bridge-1835647_1920.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+        <div class="gcolum">
+            <a href="#expandedImg">  <img src="img/computer4.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+        <div class="gcolum">
+            <a href="#expandedImg">  <img src="img/computer3.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+        <div class="gcolum">
+            <a href="#expandedImg">  <img src="img/computer2.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+        <div class="gcolum">
+            <a href="#expandedImg"> <img src="img/computer1.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+        <div class="gcolum">
+            <a href="#expandedImg"> <img src="img/city-3225912_1920.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+
+        <div class="gcolum">
+            <a href="#expandedImg"> <img src="img/chicago-690364_1920.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+        <div class="gcolum">
+            <a href="#expandedImg"> <img src="img/queens.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+
+        <div class="gcolum">
+            <a href="#expandedImg"> <img src="img/panorama-2117310_1920.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);"> </a>
+        </div>
+
+
+        <div class="gcolum">
+        <a href="#expandedImg"> <img src="img/snow-1030928_1920.jpg.png" alt="New York City" style="width:100%" onclick="myFunction(this);">
+            </a>
+        </div>
+        
+        <div class="gcolum">
+        <a href="#expandedImg"> <img src="img/turnstile-796064_1920.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);">
+            </a>
+        </div>
+        
+        
+        <div class="gcolum">
+        <a href="#expandedImg"> <img src="img/taxi-cab-381233_1920.jpg" alt="New York City" style="width:100%" onclick="myFunction(this);">
+            </a>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+    <footer>
+
+        <span style="color:white;position: absolute;left:10px;"> CUNY Techworks <br>ET712 Final - MH Jafory</span>
+        <span style="color:white;position: absolute;right:10px;"> Copyright @ 2019 </span>
+    </footer>
+    <script src="js/typingscript.js"></script>
+</body>
+
+</html>

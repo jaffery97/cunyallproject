@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Fredoka+One|Josefin+Sans|Paytone+One|Righteous&display=swap');
+
+* {
+      padding: 0;
+      margin: 0;
+      
+  }
+
+/*
+font-family: 'Cabin', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Paytone One', sans-serif;
+*/
+
+  body {
+      
+      scroll-behavior: smooth;
+      
+
+      /*font-family: 'Squada One', cursive;*/
+      font-family: 'Fredoka One', cursive;
+      /*font-family: 'Fredoka One', cursive;*/
+      /*font-family: 'Paytone One', sans-serif;*/
+
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      z-index: 20;
+      background-color: rgb(0, 0, 0, 0.2);
+      align-content: center;
+      align-items: center;
+
+  }
+
+p {
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+}
+P::first-letter {
+    font-size: 25px;
+}
+
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner h2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            font-size: 15vw;
+            text-align: center;
+            object-fit: cover;
+            text-transform: uppercase;
+            color: #000;
+            line-height: 100vh;
+            mix-blend-mode:screen;
+            text-shadow: 30px 20px 33px black;
+
+        }
+
+  .bgrd {
+      animation: bgrd 25s linear infinite;
+      background-image: url(../img/computer1.jpg);
+      height: 70vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 0% 0% 60% 0%;
+      box-shadow: 0px 0px 2px 0px black,
+          0px 0px 5px 0px black,
+          0px 0px 5px 0px black,
+          0px 0px 5px 0px black;
+     
+
+  }
+
+  @keyframes bgrd {
+
+      10% {
+          background-image: url(../img/computer1.jpg);
+
+          display: flex;
+
+
+      }
+
+      30% {
+          background-image: url(../img/computer2.jpg);
+
+          display: flex;
+
+      }
+
+      50% {
+          background-image: url(../img/computer3.jpg);
+
+          display: flex;
+
+      }
+
+      70% {
+          background-image: url(../img/computer4.jpg);
+
+          display: flex;
+
+      }
+
+      100% {
+          background-image: url(../img/computer5.jpg);
+
+          display: flex;
+
+      }
+  }
+
+  .logo {
+      width: 120px;
+      height: 100px;
+      position: absolute;
+      left: 0px;
+      z-index: 999;
+
+  }
+
+  nav {
+      position: absolute;
+      right: 0px;
+      padding: 35px 10px 0px 0px;
+      margin: 0px;
+      z-index: 999;
+  }
+
+  nav a {
+
+      text-decoration: none;
+      background-color: darkslategrey;
+      color: white;
+      padding: 4px;
+      margin: 3px;
+      font-family: 'Prompt', sans-serif;
+      font-size: 13px;
+      border-radius: 1px;
+      box-shadow: 0px 0px 2px 0px black,
+          0px 0px 5px 0px black,
+          0px 0px 5px 0px black,
+          0px 0px 5px 0px black;
+      z-index: 3;
+  }
+
+  .btext {
+      position:relative;
+      top: 230px;
+      text-align: center;
+     
+  }
+
+  .typewrite {
+     
+      text-decoration: none;
+      background-color: #000;
+      border-radius: 200px;
+      color: aliceblue;
+      padding: 30px;
+      font-size: 2em;
+      transition: 2s;
+      font-family: 'Paytone One', sans-serif;
+
+  }
+
+
+
+
+
+  /* Global */
+
+  .line-1 {
+      position: relative;
+      bottom: 0px;
+      height: 20vh;
+      width: 200px;
+      margin: 0 auto;
+      /*    background-color: white;*/
+      padding: 10px;
+      font-size: 20px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      color: brown;
+      text-shadow: 2px 3px 20px
+  }
+
+  /* Animation */
+  .anim-typewriter {
+      animation: typewriter 3s steps(44) 1s 1 normal both,
+          blinkTextCursor 500ms steps(44) 1 normal;
+  }
+
+  @keyframes typewriter {
+      from {
+          width: 0;
+      }
+
+      to {
+          width: 90%;
+      }
+  }
+
+  @keyframes blinkTextCursor {
+      from {
+          border-right-color: rgba(255, 255, 255, .75);
+      }
+
+      to {
+          border-right-color: transparent;
+      }
+  }
+
+  .contactus {
+      position: absolute;
+      right: 50%;
+      transform: translate(50%, 40%);
+      background-color: transparent;
+      color: aliceblue;
+      padding: 5px;
+      font-weight: bold;
+      bottom: 43px;
+     
+/*
+      box-shadow: 0px 0px 2px 0px purple,
+          0px 0px 5px 0px white,
+          0px 0px 5px 0px blue,
+          0px 0px 5px 0px white;
+*/
+  }
+
+ 
+
+.title {
+    font-size: 35px;
+    position: absolute;
+    z-index: 10;
+    right: 0px;
+    width: 200px;
+    top:50%;
+    
+    text-align: right;
+}
+
+
+
+ footer {
+      background-image: url(../img/11219.png);
+      position: relative;
+      background-size: cover;
+  
+   bottom: 0px;
+      color: white;
+      height: 100px;
+   
+      
+  }
+
+footer span {
+     position: relative;
+    bottom: 7px;
+}
+
+.city {
+    font-size: 15px;
+     padding: 15px;
+    margin: 20px;
+    position: relative;
+    font-family: sans-serif;
+      text-align: justify;
+
+}
+
+#bgrd {
+     scroll-behavior: smooth;
+}
+
+.exb {
+    height: 0px;
+}
+
+.header {
+    position: relative;
+     z-index: 999;
+     width: 100%   ;
+      position: absolute;
+      left: 0px;
+      z-index: 999;
+}

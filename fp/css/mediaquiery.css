@@ -1,0 +1,33 @@
+@media only screen and (max-width:600px) {
+    
+    .typewrite {
+        font-size: 14px;
+    }
+    
+    .title {
+        font-size: 22px;
+    }
+    
+    .cityimg {
+    width: 100%;
+        padding: 0;
+        margin: 0px;
+    
+        }
+    .exb {
+    height: 0px;
+}
+    
+    .gcolum  img {
+        height: 110px;
+    }
+    
+    #expandedImg {
+    width: 100%;
+    padding:20px;
+    position: none;
+    left: 0;
+        z-index: 2;
+}
+   
+}

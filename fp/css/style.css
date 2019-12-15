@@ -29,9 +29,9 @@ clip-path: polygon(0 0, 200% 0, 0 100%);
 }
 
 .ebox {
-    height: 100px;
+    height: 200px;
     position:absolute;
-    top:-20px;
+    top:-120px;
     z-index:-1;
     width: 100%;
     background: #16222A;  /* fallback for old browsers */

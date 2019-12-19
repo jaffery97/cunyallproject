@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>PROJECT 9</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #667db6;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            ;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 30px;
+            font-family: 'Righteous', cursive;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0px 0px 23px black;
+            height: 100vh;
+
+        }
+        
+        p::first-letter {
+          font-size: 42px;
+        }
+       
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        <script>
+            var firstname = "Magfur";
+            var lastname = "Jafory";
+            var POB = "Sylhet";
+            var intials = firstname.charAt(0) + lastname.charAt(0);
+            var POBCharNum = POB.length;
+            document.write("<p>My first name is: " + firstname + "</p>");
+            document.write("<p>My last name is: " + lastname + "</p>");
+            document.write("<p>I was born in " + POB + "</p>");
+            document.write("<p>There are " + POBCharNum + " characters in my place of birth " + "</p>");
+            document.write("<p>My initals are: " + intials + "</p>");
+        </script>
+    </div>
+</body></html>

@@ -263,7 +263,7 @@ P::first-letter {
       }
   }
 
-  .contactus {
+  .scroldown {
       position: absolute;
       right: 50%;
       transform: translate(50%, 40%);
@@ -281,6 +281,19 @@ P::first-letter {
 */
   }
 
+ .scrolup {
+      position: relative;
+     left: -5px;
+     bottom: 60px;
+     float: right;
+     transform: rotate(175deg);
+     
+      background-color: transparent;
+      color: aliceblue;
+      padding: 5px;
+      font-weight: bold;
+      
+}
  
 
 .title {
